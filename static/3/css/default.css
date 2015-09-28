@@ -1,0 +1,240 @@
+/*
+ * Nivo Lightbox Default Theme v1.0
+ * http://dev7studios.com/nivo-lightbox
+ *
+ * Copyright 2013, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+ 
+.nivo-lightbox-theme-default.nivo-lightbox-overlay { 
+	background: #666;
+	background: rgba(0,0,0,0.6); 
+}
+.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading { background: url(loading.html) no-repeat 50% 50%; }
+
+.nivo-lightbox-theme-default .nivo-lightbox-nav {
+	top: 10%;
+	width: 8%;
+	height: 80%;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	opacity: 0.5;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-nav:hover { 
+	opacity: 1; 
+	background-color: rgba(0,0,0,0.5);
+}
+.nivo-lightbox-theme-default .nivo-lightbox-prev { 
+	background-image: url(prev.html); 
+	border-radius: 0 3px 3px 0;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-next { 
+	background-image: url(next.html); 
+	border-radius: 3px 0 0 3px;
+}
+
+.nivo-lightbox-theme-default .nivo-lightbox-close {
+	display: block;
+	background: url(close.html) no-repeat 5px 5px;
+	width: 16px;
+	height: 16px;
+	text-indent: -9999px;
+	padding: 5px;
+	opacity: 0.5;
+}
+.nivo-lightbox-theme-default .nivo-lightbox-close:hover { opacity: 1; }
+
+.nivo-lightbox-theme-default .nivo-lightbox-title-wrap { bottom: -7%; }
+.nivo-lightbox-theme-default .nivo-lightbox-title {
+	font: 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	background: #000;
+	color: #fff;
+	padding: 7px 15px;
+	border-radius: 30px;
+}
+
+.nivo-lightbox-theme-default .nivo-lightbox-image img {
+	background: #fff;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	        box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+}
+.nivo-lightbox-theme-default .nivo-lightbox-ajax,
+.nivo-lightbox-theme-default .nivo-lightbox-inline {
+	background: #fff;
+	padding: 40px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+	        box-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.3),
+       (-o-min-device-pixel-ratio: 2.6/2),
+       (min--moz-device-pixel-ratio: 1.3),
+       (min-device-pixel-ratio: 1.3),
+       (min-resolution: 1.3dppx) {
+
+	.nivo-lightbox-theme-default .nivo-lightbox-content.nivo-lightbox-loading { 
+		background-image: url(loading%402x.html); 
+		background-size: 32px 32px;
+	}
+	.nivo-lightbox-theme-default .nivo-lightbox-prev { 
+		background-image: url(prev%402x.html); 
+		background-size: 48px 48px;
+	}
+	.nivo-lightbox-theme-default .nivo-lightbox-next { 
+		background-image: url(next%402x.html); 
+		background-size: 48px 48px;
+	}
+	.nivo-lightbox-theme-default .nivo-lightbox-close { 
+		background-image: url(close%402x.html); 
+		background-size: 16px 16px;
+	}
+	
+}
+
+/*popup*/
+#popupwindow1,#popupwindow2,#popupwindow3,#popupwindow4,#popupwindow5{
+		display: none;
+		width: 480px;
+		height: 382px;
+		position: fixed;
+		z-index: 1001;
+		top: 50%;
+		left: 50%;
+		margin-left: -240px;
+		margin-top: -191px;
+		background: #fff;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+	}
+	.close{
+		float: right;
+		background-color: transparent;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		font-size: 18pt;
+		font-weight: bold;
+		color:#b00000;
+		font-family: tahoma;
+	}
+	.around{
+		display: none;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.4);
+		position: fixed;
+		z-index: 1000;
+		top:0;
+		left: 0;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+#variety{
+	margin-left: -1%;
+width: 102%;
+height: 535px;
+}
+.product{
+font: 18px pt_sans_narrowregular, Arial, Helvetica, sans-serif;
+	height: 445px;
+	width: 228px;
+	float: left;
+	
+	margin-left: 15px;
+	padding-top: 20px;
+	background: #333 !important;
+box-shadow: inset 0 10px 35px #000;
+border-bottom: 1px solid #000;
+border-radius: 10px;
+}
+
+.product img{
+	margin: 0 9%;
+	width: 190px;
+}
+.product:nth-of-type(1){
+	margin-left: 20px;
+}
+
+.series{
+font: 18px pt_sans_narrowregular, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	margin-top: 25px;
+	height: 20px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.product .price{
+	color:black;
+	width: 140px;
+	height: 55px;
+	background: url(../img/button_price.png) center no-repeat;
+	float: left;
+	margin: 0px;
+	font-size: 18px;
+	padding-left: 20px;
+	line-height: 55px;
+	position: absolute;
+	margin-left: -12px;
+}
+
+.product .price b{
+	font-size: 30px;
+	font-weight: normal;
+}
+
+.product .oldprice{
+font: 18px pt_sans_narrowregular, Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	width: 75px;
+	height: 50px;
+	float: left;
+	text-decoration: line-through;
+	padding-left: 12px;
+	line-height: 50px;
+	margin: 5px 0 0 140px;
+	color: white;
+}
+
+
+
+
+.order{
+	border: 0px;
+	height: 60px;
+	line-height: 60px;
+	width: 210px;
+	margin: 15px 5% 5px;
+	border-radius: 10px;
+	font-size: 24px;
+	color: #fff;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	background:#77d1e5;
+    background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#DB5A5A),color-stop(100%,#be0000 ));
+    background: -webkit-linear-gradient(top,#DB5A5A 0,#be0000 100%);
+    background:-moz-linear-gradient(top,#DB5A5A 0,#be0000  100%);
+    background:-o-linear-gradient(top,#DB5A5A 0,#be0000  100%);
+    background:-ms-linear-gradient(top,#DB5A5A 0,#be0000  100%);
+    background:linear-gradient(top,#DB5A5A 0,#be0000  100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#DB5A5A', endColorstr='#be0000 ', GradientType=0);
+}
+.after_f{
+width: 100%;
+color: white;
+text-align: center;}
+
+
+
